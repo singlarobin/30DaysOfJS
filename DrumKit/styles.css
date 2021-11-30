@@ -1,6 +1,13 @@
 body {
     margin: 0;
     box-sizing: content-box;
+    background: url('./background.jpg') bottom center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
