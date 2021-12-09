@@ -1,0 +1,119 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden scroll;
+    background: rgba(25 23 75);
+}
+
+:root {
+    --base-color: #ffc600;
+    --spacing: 10px;
+    --blur: 2px;
+}
+
+.container {
+    width: inherit;
+    margin: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0rem auto;
+    text-align: center;
+}
+
+h2 span {
+    color: var(--base-color);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    padding: 2rem 0rem;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+    color: #fff;
+}
+
+.data label {
+    font-size: 1.15rem;
+}
+
+.data input {
+    width: 20vw;
+    height: 25px;
+    opacity: 1;
+}
+
+.data input:hover {
+    cursor: pointer;
+    opacity: 0.75;
+    transition: opacity 0.2s ease-in;
+}
+
+.baseColor {
+    padding: 0.25rem;
+    background-color: transparent;
+    border: 0;
+}
+
+.imageDiv {
+    width: 70%;
+    height: auto;
+    max-width: 800px;
+    max-height: 500px;
+    background: var(--base-color);
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 480px) {
+
+    .controls {
+        display: grid;
+        grid-template-columns: repeat(3, 30vw);
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .data label {
+        font-size: 1.75rem;
+    }
+
+    .controls {
+        padding: 3rem 0rem;
+    }
+
+}
