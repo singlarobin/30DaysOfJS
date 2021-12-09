@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Variables and JS</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <!-- To prevent browser from requesting favicon -->
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    </head>
+    <body>
+        <div class="container">
+            <h2>Update CSS Variables with <span>JS</span></h2>
+            <div class="content">
+                <div class="controls">
+                    <div class="data">
+                        <label>Spacing</label>
+                        <input
+                            type="range"
+                            name="spacing"
+                            min="0"
+                            max="100"
+                            value="10"
+                            data-sizing="px"
+                        />
+                    </div>
+                    <div class="data">
+                        <label>Blur</label>
+                        <input
+                            type="range"
+                            name="blur"
+                            min="0"
+                            max="100"
+                            value="2"
+                            data-sizing="px"
+                        />
+                    </div>
+                    <div class="data">
+                        <label>Base Color</label>
+                        <input
+                            class="baseColor"
+                            type="color"
+                            name="base-color"
+                            value="#ffc600"
+                        />
+                    </div>
+                </div>
+                <img
+                    class="imageDiv"
+                    src="https://source.unsplash.com/7bwQXzbF6KE/800x500"
+                    atl="Not Found"
+                />
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
