@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+    background: rgb(255 195 0);
+}
+
+.inbox {
+    width: 40vw;
+    margin: 2rem auto;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 0.25rem;
+    box-shadow: 5px 5px 0px rgb(0, 0, 0, 0.1);
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item input[type='checkbox'] {
+    margin: 1rem;
+}
+
+.item input[type="checkbox"]:checked + p{
+    text-decoration: line-through;
+    background: #F9F9F9;
+}
+
+.item input[type='checkbox']:hover {
+    cursor: pointer;
+}
+
+.item p {
+    flex: 1;
+    margin: 0;
+    padding: 1rem;
+    border-left: 1px solid #D1E2FF;
+}
